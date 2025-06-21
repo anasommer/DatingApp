@@ -1,11 +1,52 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "Microsoft.EntityFrameworkCore.Design/10.0.0-preview.5.25277.114": {
+        "type": "package"
+      },
+      "Microsoft.EntityFrameworkCore.Sqlite/10.0.0-preview.5.25277.114": {
+        "type": "package"
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Microsoft.EntityFrameworkCore.Design/10.0.0-preview.5.25277.114": {
+      "sha512": "wvdVEVWuDRpHKBlPeCJg9jyadkpLd6J8H5SwwvOWwS6g+x+GH4ErYV2QYaDOfWlt3WhjAha2GdCcQCmjw2XFZg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.design/10.0.0-preview.5.25277.114",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "build/net10.0/Microsoft.EntityFrameworkCore.Design.props",
+        "lib/net10.0/Microsoft.EntityFrameworkCore.Design.dll",
+        "lib/net10.0/Microsoft.EntityFrameworkCore.Design.xml",
+        "microsoft.entityframeworkcore.design.10.0.0-preview.5.25277.114.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Sqlite/10.0.0-preview.5.25277.114": {
+      "sha512": "EXIgntTnF48fa4VN8RXi+jRTHEKa5YvtaK1iRkLEqZGdERzZJHbdRSr93wQGJlShx43mlJXmvcerJAV0B+FbHQ==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.sqlite/10.0.0-preview.5.25277.114",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "lib/net10.0/_._",
+        "microsoft.entityframeworkcore.sqlite.10.0.0-preview.5.25277.114.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlite.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "Microsoft.EntityFrameworkCore.Design >= 10.0.0-preview.5.25277.114",
+      "Microsoft.EntityFrameworkCore.Sqlite >= 10.0.0-preview.5.25277.114"
+    ]
   },
   "packageFolders": {
     "/Users/anastassiasommer/.nuget/packages/": {}
@@ -49,6 +90,16 @@
     "frameworks": {
       "net9.0": {
         "targetAlias": "net9.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": {
+            "target": "Package",
+            "version": "[10.0.0-preview.5.25277.114, )"
+          },
+          "Microsoft.EntityFrameworkCore.Sqlite": {
+            "target": "Package",
+            "version": "[10.0.0-preview.5.25277.114, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -71,5 +122,25 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.EntityFrameworkCore.Design 10.0.0-preview.5.25277.114 is not compatible with net9.0 (.NETCoreApp,Version=v9.0). Package Microsoft.EntityFrameworkCore.Design 10.0.0-preview.5.25277.114 supports: net10.0 (.NETCoreApp,Version=v10.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore.Design",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.EntityFrameworkCore.Sqlite 10.0.0-preview.5.25277.114 is not compatible with net9.0 (.NETCoreApp,Version=v9.0). Package Microsoft.EntityFrameworkCore.Sqlite 10.0.0-preview.5.25277.114 supports: net10.0 (.NETCoreApp,Version=v10.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore.Sqlite",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
 }
