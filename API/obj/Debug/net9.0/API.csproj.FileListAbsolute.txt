@@ -150,3 +150,6 @@
 /Users/anastassiasommer/Desktop/DatingApp/API/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
 /Users/anastassiasommer/Desktop/DatingApp/API/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
 /Users/anastassiasommer/Desktop/DatingApp/API/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/anastassiasommer/Desktop/DatingApp/API/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/anastassiasommer/Desktop/DatingApp/API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/anastassiasommer/Desktop/DatingApp/API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
